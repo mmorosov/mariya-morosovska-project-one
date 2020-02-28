@@ -1,0 +1,324 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* Global Styles */
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    color: #FCFCFC;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    line-height: 2.9rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;  
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: #152D20;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px 0;
+    position: absolute;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #FCFCFC;
+}
+
+.copy {
+    float: left;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1,
+.feature h2,
+.friends h2,
+h3 {
+    font-family: 'Fredericka the Great', serif;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 12rem;
+    line-height: 11.7rem;
+    text-align: right;
+    max-width: 60%;
+    float: right;
+}
+
+.feature h2 {
+    font-size: 5.1rem;
+}
+
+.friends h2 {
+    font-size: 4.9rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 3.5rem;
+    line-height: 3.9rem;
+}
+
+nav a,
+.links h2,
+footer h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+nav ul,
+.friends ul,
+.socialMedia ul,
+.links ul,
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    padding: 5px 10px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+/* Header Styling */
+
+header {
+    background-image: url(animal-land-assets/image-1.jpg);
+    background-size: cover;
+    height: 90vh;
+    padding: 30px 0;
+    position: relative;
+}
+
+nav li {
+    float: left;
+}
+
+.socialMedia{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    text-align: right;
+}
+
+/* Main Feature Styling */
+
+.feature {
+    background-color: #152D20;
+}
+
+.feature img {
+    width: 35%;
+    margin-right: 30px;
+    float: left;
+}
+
+.feature .button {
+    background-color: #FCFCFC;
+    color: #152D20;
+}
+
+.feature .copy {
+    color: #FCFCFC;
+    width: calc(65% - 30px);
+}
+
+/* Friends Section Styling */
+
+.friends {
+    background-color: #C3D3CB;
+}
+
+.friends h2 {
+    color: #152D20;
+}
+
+.friends ul {
+    list-style: none;
+}
+
+.friends .friendPics li,
+.links .customLink li {
+    width: calc(100%/3 - 14px);
+    margin-right: 20px;
+    /* margin-bottom: 20px; */
+    float: left;
+}
+
+.friendPics li:last-child,
+.customLink li:last-child {
+    margin-right: 0px;
+} 
+
+.friends .friendPics img {
+    display: block;
+}
+
+/* Links Section Styling */
+
+.links {
+    background-color: #152D20;
+    padding: 50px 0;
+}
+
+.customLink li {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.customLink h2 {
+    max-width: 60%;
+    text-align: center;
+    margin: 30px 20% 0 20%;
+}
+
+.customLink .fas {
+    margin: 0;
+    padding: 0;
+}
+
+.customLink a {
+    color: white;
+}
+
+/* Blog Section Styling */
+
+section.posts {
+    padding: 0;
+}
+
+article {
+    width: 100%;
+}
+
+.posts article .copy {
+    color: #152D20;
+    width: 50%;
+    padding: 10% 5% 0 10%;
+}
+
+.posts article h3 {
+    width: 80%;
+}
+
+.posts article img {
+    width: 50%;
+    float: right;
+}
+
+.posts article:nth-of-type(2n) .copy {
+    float: right;
+    padding: 10% 10% 0 5%;
+}
+
+.posts article:nth-of-type(2n) img {
+    float: left;
+}
+
+/* Footer Styling */
+
+footer {
+    background-color: #152D20;
+}
+
+footer .wrapper {
+    padding: 100px 0;
+}
+
+footer .footerMenu,
+footer .stayUpdated,
+footer .contact {
+    float: left;
+}
+
+footer .footerMenu {
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    width: 20%;
+}
+
+footer .stayUpdated {
+    text-align: center;
+    width: 55%;
+}
+
+footer .stayUpdated input,
+footer .stayUpdated button {
+    height: 45px;
+    padding: 10px 20px;
+    border: none;
+    display: block;
+    float: left;
+}
+
+footer .stayUpdated input {
+    width: 70%;
+}
+
+footer .stayUpdated button {
+    width: 30%;
+    background-color: black;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+
+
+footer .contact {
+    text-align: right;
+    width: 25%;
+}
+
+footer .copyright {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+
