@@ -43,6 +43,7 @@ ul {
 .button {
     background-color: #152D20;
     color: #FCFCFC;
+    border: solid 1px #FCFCFC;
     text-transform: uppercase;
     text-align: center;
     padding: 10px 20px;
@@ -58,8 +59,6 @@ ul {
 
 .copy {
     float: left;
-    margin: 0 auto;
-    padding: 50px 20px;
 }
 
 h1,
@@ -96,14 +95,31 @@ h3 {
     line-height: 3.9rem;
 }
 
+a {
+    color: #FCFCFC;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+.links li a:hover,
+.links li a:focus {
+    color: #C3D3CB;
+}
+
 nav a,
-.links p,
 footer h2 {
     font-family: 'Cormorant Garamond', serif;
     color: #FCFCFC;
     text-transform: uppercase;
     margin: 0;
+    padding: 5px 10px;
 }
+
+.links p {
+   text-transform: uppercase; 
+}
+
 
 nav ul,
 .friends ul,
@@ -115,14 +131,6 @@ footer ul {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-}
-
-nav a {
-    padding: 5px 10px;
-}
-
 p {
     margin: 10px 0;
 }
@@ -131,6 +139,18 @@ section {
     padding: 100px 0;
 }
 
+.feature img,
+.friends .friendPics img {
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+
+.feature img:hover,
+.feature img:focus
+.friends .friendPics img:hover,
+.friends .friendPics img:focus {
+    transform: scale(1.1);
+}
 
 /* Header Styling */
 
@@ -185,10 +205,28 @@ header .socialMedia {
     width: calc(65% - 30px);
 }
 
-.feature .button {
+.feature .button,
+.feature .button a {
     background-color: #FCFCFC;
     color: #152D20;
+    border: 1px solid #FCFCFC;
 }
+
+.feature .button:hover, 
+.feature .button:focus, 
+.feature .button:hover a,
+.feature .button:focus a {
+    color: #FCFCFC;
+    background-color: #152D20;
+    border: 1px solid #FCFCFC;
+}
+
+.feature .button a,
+.feature .button:hover a,
+.feature .button:focus a {
+    border: none;
+}
+
 
 /* Friends Section Styling */
 
@@ -243,8 +281,12 @@ header .socialMedia {
     font-size: 5rem;
 }
 
+/* .customLink p {
+    padding: 0 50px;
+} */
+
 .customLink a {
-    color: white;
+    color: #FCFCFC;
 }
 
 /* Blog Section Styling */
@@ -260,7 +302,7 @@ article {
 .posts article .copy {
     color: #152D20;
     width: 50%;
-    padding: 3% 5% 0 10%;
+    padding: 5% 5% 0 10%;
 }
 
 .posts article img {
@@ -270,11 +312,26 @@ article {
 
 .posts article:nth-of-type(2n) .copy {
     float: right;
-    padding: 3% 10% 0 5%;
+    padding: 5% 10% 0 5%;
 }
 
 .posts article:nth-of-type(2n) img {
     float: left;
+}
+
+.posts .button:hover,
+.posts .button:focus, 
+.posts .button:hover a,
+.posts .button:focus a {
+    color: #152D20;
+    background-color: #FCFCFC;
+    border: 1px solid #152D20;
+}
+
+.posts .button a,
+.posts .button:hover a,
+.posts .button:focus a {
+    border: none;
 }
 
 /* Footer Styling */
@@ -294,7 +351,7 @@ footer .contact {
 }
 
 footer .footerMenu {
-    color: white;
+    color: #FCFCFC;
     text-align: left;
     text-transform: uppercase;
     width: 20%;
@@ -321,10 +378,17 @@ footer .stayUpdated input {
 
 footer .stayUpdated button {
     width: 30%;
-    background-color: black;
-    color: #fff;
+    background-color: #000000;
+    color: #FCFCFC;
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
+}
+
+footer .stayUpdated button:hover,
+footer .stayUpdated button:focus {
+    background-color: #FCFCFC;
+    color: #000000;
+    border: 1px solid #000000;
 }
 
 footer .contact {
@@ -337,10 +401,12 @@ footer p {
 }
 
 footer .copyright {
-    background-color: black;
+    background-color: #000000;
     text-align: center;
     padding: 10px;
 }
+
+/* Media Queries */
 
 @media (max-width: 1085px) {
     body {
@@ -652,5 +718,4 @@ footer .copyright {
     h3 {
         width: 90%;
     }
-
 }
